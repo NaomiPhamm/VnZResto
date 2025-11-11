@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "714003444385",
+    "project_id": "vnzrestoproject",
+    "storage_bucket": "vnzrestoproject.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714003444385:android:793b16c7c346b25d28f6e0",
+        "android_client_info": {
+          "package_name": "com.example.vnzresto_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_SutlykS83r2Th9luGFOaO3AsfsjrUdY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
