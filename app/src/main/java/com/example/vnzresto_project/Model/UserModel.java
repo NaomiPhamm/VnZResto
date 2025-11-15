@@ -1,4 +1,4 @@
-package com.example.vnzresto_project.models;
+package com.example.vnzresto_project.Model;
 
 public class UserModel {
     String name;

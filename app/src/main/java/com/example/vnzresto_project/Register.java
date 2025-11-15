@@ -12,22 +12,16 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-import com.example.vnzresto_project.models.UserModel;
+import com.example.vnzresto_project.Model.UserModel;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.Firebase;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.regex.Pattern;
-
 public class Register extends AppCompatActivity {
- EditText signup_name,signup_email,signup_phone,signup_pw, signup_cpw;
+ EditText signup_name,signup_email,signup_phone,signup_pw, signup_cpw,signup_address;
  Button signupreg_btn,loginreg_btn;
  FirebaseAuth firebaseAuth;
  FirebaseDatabase database;
@@ -39,6 +33,7 @@ public class Register extends AppCompatActivity {
         signup_name  = findViewById(R.id.signup_name);
         signup_email = findViewById(R.id.signup_email);
         signup_phone  = findViewById(R.id.signup_phone);
+        signup_address = findViewById(R.id.signup_address);
         signup_pw  = findViewById(R.id.signup_pw);
         signup_cpw  = findViewById(R.id.signup_cpw);
         signupreg_btn = findViewById(R.id.signupreg_btn);
@@ -65,6 +60,7 @@ public class Register extends AppCompatActivity {
         String name = signup_name.getText().toString().trim();
         String email = signup_email.getText().toString().trim();
         String phone = signup_phone.getText().toString().trim();
+        String address= signup_address.getText().toString().toString();
         String pass = signup_pw.getText().toString().trim();
         String confirmPass = signup_cpw.getText().toString().trim();
 
@@ -98,7 +94,7 @@ public class Register extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    UserModel userModel = new UserModel(name,email,phone,pass);
+                    UserModel userModel = new UserModel(name,email,phone,address,pass);
                     String id = task.getResult().getUser().getUid();
                     database.getReference().child("Users").child(id).setValue(userModel);
 

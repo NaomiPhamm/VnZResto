@@ -12,10 +12,10 @@ import com.example.vnzresto_project.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link favoriteFragment#newInstance} factory method to
+ * Use the {@link FavoriteFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class favoriteFragment extends Fragment {
+public class FavoriteFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class favoriteFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public favoriteFragment() {
+    public FavoriteFragment() {
         // Required empty public constructor
     }
 
@@ -39,8 +39,8 @@ public class favoriteFragment extends Fragment {
      * @return A new instance of fragment favoriteFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static favoriteFragment newInstance(String param1, String param2) {
-        favoriteFragment fragment = new favoriteFragment();
+    public static FavoriteFragment newInstance(String param1, String param2) {
+        FavoriteFragment fragment = new FavoriteFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);

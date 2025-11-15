@@ -12,10 +12,10 @@ import com.example.vnzresto_project.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link searchFragment#newInstance} factory method to
+ * Use the {@link SearchFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class searchFragment extends Fragment {
+public class SearchFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class searchFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public searchFragment() {
+    public SearchFragment() {
         // Required empty public constructor
     }
 
@@ -39,8 +39,8 @@ public class searchFragment extends Fragment {
      * @return A new instance of fragment searchFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static searchFragment newInstance(String param1, String param2) {
-        searchFragment fragment = new searchFragment();
+    public static SearchFragment newInstance(String param1, String param2) {
+        SearchFragment fragment = new SearchFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
