@@ -5,14 +5,16 @@ public class UserModel {
     String email;
     String phone;
     String pw;
+    String address;
 
     public UserModel() {
     }
 
-    public UserModel(String name, String email, String phone, String pw) {
+    public UserModel(String name, String email, String phone,String address, String pw) {
         this.name = name;
         this.email = email;
         this.phone = phone;
+        this.address = address;
         this.pw = pw;
     }
 
@@ -39,6 +41,11 @@ public class UserModel {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+    public String getAddress(String address){return address;}
+    public void setAddress(String address) {
+        this.email = address;
+    }
+
 
     public String getPw() {
         return pw;
