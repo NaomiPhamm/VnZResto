@@ -38,7 +38,7 @@ import java.util.Map;
 
 public class PayOutActivity extends AppCompatActivity {
 
-    // UI
+
     private ImageButton backeButton;
     private EditText nameEditText;
     private EditText addressEditText;
@@ -284,7 +284,6 @@ public class PayOutActivity extends AppCompatActivity {
     private void onPaymentResult(PaymentSheetResult paymentSheetResult) {
         if (paymentSheetResult instanceof PaymentSheetResult.Completed) {
             Toast.makeText(this, "Payment Success", Toast.LENGTH_SHORT).show();
-            // Payment thành công → đặt hàng vào Firebase
             placeOrder();
         } else {
             Toast.makeText(this, "Payment Failed or Canceled", Toast.LENGTH_SHORT).show();

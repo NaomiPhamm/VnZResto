@@ -80,7 +80,6 @@ public class PendingOrder extends AppCompatActivity implements PendingOrderAdapt
     private void addDataToListForRecyclerView() {
         for (OrderDetailsModel orderItem : listOfOrderItem) {
 
-            // Tên user
             if (orderItem.getUserName() != null) {
                 listOfName.add(orderItem.getUserName());
             } else {
