@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VnZResto">
+        <activity
+            android:name=".Resto_User_Activity.RecentOrderItems"
+            android:exported="false" />
+        <activity
+            android:name=".Resto_Admin_Activity.AddItem"
+            android:exported="false" />
+        <activity
+            android:name=".Resto_Admin_Activity.AllItem"
+            android:exported="false" />
+        <activity
+            android:name=".Resto_Admin_Activity.AdminProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Resto_Admin_Activity.EarningDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Resto_Admin_Activity.PendingOrder"
+            android:exported="false" />
+        <activity
+            android:name=".Resto_Admin_Activity.OrderDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Resto_Admin_Activity.OutForDelivery"
+            android:exported="false" />
+        <activity
+            android:name=".Resto_User_Activity.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Resto_User_Activity.PayOutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Resto_User_Activity.RecentOrderItemsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Resto_User_Activity.CongratsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Resto_User_Activity.Menu"
+            android:exported="false" />
+        <activity
+            android:name=".Resto_User_Activity.DetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Resto_User_Activity.UserDashBoard"
+            android:exported="false" />
+        <activity
+            android:name=".Resto_Admin_Activity.AdminDashBoard"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
